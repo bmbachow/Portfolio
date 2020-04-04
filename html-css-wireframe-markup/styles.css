@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  background: #e6f1f5;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgb(214, 238, 228);
+}
+
+#navbar-artwork {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}
+
+#navbar-artwork img {
+  height: 87px;
+}
+
+#title {
+  padding-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+
+}
+
+#about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+
+}
+
+#personal-statement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+#project-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* if I create a mobile hamburger navbar of X height and pin it absolute to the top right of the screen I can then create a top border on the body of the same height as the navbar and then as the screen widens take items from the hamburger nav and place them along the top border */
+
+/* I want to swap the nav bar  */
