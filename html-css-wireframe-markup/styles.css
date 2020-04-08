@@ -209,4 +209,26 @@ nav {
   margin-right: auto;
   display: block;
   max-width: 90vw;
+  
+}
+
+.project1 {
+  border-style: solid;
+  border-color: #830343;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.projectBlocks {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.project2 {
+  border-style: solid;
+  border-color: #830343;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  border-radius: 10px;
 }
