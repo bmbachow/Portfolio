@@ -4,39 +4,49 @@
   <title>HTML wireframe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav role="navigation" class="navbar">
-    <!-- <div id="navbar-artwork"></div> -->
     <ul id="navbar-ul">
-      <li class="first">First Item</li>
-      <li class="second">Second Item</li>
-      <li class="third">Third Item</li>
+      <li class="first">About Me</li>
+      <li class="second"><a href=".projects">Projects</a></li>
+      <li class="third">Contact</li>
     </ul>
   </nav>
 
   <main role="main">
     <header role="hero">
-      <h1 id="hero">Hero</h1>
+      <h1 id="hero"><img src="../images/hero.jpg" alt="Hero"></h1>
     </header>
 
     <div>
-      <h2 id="about-me">About Me</h2>
-      <p id="personal-statement">This is filler text I am typing it to fill space.  This is filler text I am typing it to fill space.  This is filler text I am typing it to fill space.This is filler text I am typing it to fill space.This is filler text I am typing it to fill space.This is filler text I am typing it to fill space.This is filler text I am typing it to fill space.This is filler text I am typing it to fill space.This is filler text I am typing it to fill space.</p>
+      <h2 id="about-me"><img src="../images/selfie.jpg" alt="selfie"></h2>
+      <div id="Bachow">Brian Bachow's Portfolio</div>
+      <p id="personal-statement">I am a full-stack web developer with a background in business development, social science research, and law.  I am passionate about public speaking, physical fitness, and efficient, easily understandable code.</p>
     </div>
 
-    <div>
-      <h2 class="projects">Projects</h2>
-      <div class="project-images">
-        <div id="project1"></div>
-        <div id=project2></div>
-        <div id="project3"></div>
-        </div>
+    <div >
+      <p class="projects">Projects</p>
+      <section class="project1">
+        <div><img class="projectImage" src="../images/nhlquizappimage.png"></div>
+        <h3><a href="https://bmbachow.github.io/nhl-quiz-project/">NHL Quiz App</a></h3>
+        <p>A short multiple choice quiz about NHL trivia</p>
+      </section>
+      <section class="project2"></section>
+      <section class="project3"></section>
     </div>
 
-  </main>
-
-  <footer role="content-info">Footer</footer>
+  <footer>
+    <div id="contact" class="contact-info">
+        <ul class="info">
+            <li><a href="bmbachow@gmail.com">Email</a></li>
+            <li><a href="https://github.com/bmbachow">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/brian-bachow-j-d-50b72b20/">Linkedin</a></li>
+        </ul>
+    </div>
+</footer>
 
 </body>
 </html>
