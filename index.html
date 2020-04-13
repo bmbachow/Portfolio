@@ -9,8 +9,8 @@
 </head>
 <body>
   <nav role="navigation" class="navbar">
-    <ul id="navbar-ul">
-      <li class="first"><a href="#personal-statement">About Me</a></li>
+    <ul class="navbar-ul">
+      <li class="first"><a href=".personal-statement">About Me</a></li>
       <li class="second"><a href=".projects">Projects</a></li>
       <li class="third"><a href="footer">Contact</a></li>
     </ul>
@@ -18,35 +18,37 @@
 
   <main role="main">
     <header role="hero">
-      <h1 id="hero"><img src="/images/hero.jpg" alt="Hero"></h1>
+      <img class="hero" src="images/hero.jpg">
+      <h1 class="blurb">Hello, my name is Brian.</h1>
     </header>
 
     <div>
-      <h2 id="about-me"><img src="/images/selfie.jpg" alt="selfie"></h2>
-      <div id="Bachow">Brian Bachow's Portfolio</div>
-      <p id="personal-statement">I am a full-stack web developer with a background in business development, social science research, and law.  I am passionate about public speaking, physical fitness, and efficient, easily understandable code.</p>
+      <h2 class="about-me"><img src="/images/selfie.jpg" alt="selfie"></h2>
+      <div class="Bachow"></div>
+      <p class="personal-statement">I am a full-stack web developer with a background in business development, social science research, and law.  I am passionate about public speaking, physical fitness, and efficient, easily understandable code.</p>
     </div>
 
-    <div class="projectBlocks">
+    <div>
       <p class="projects">Projects</p>
+      <div class="project-blocks">
       <section class="project1">
-        <div><img class="projectImage" src="/images/nhlquizappimage.png"></div>
+        <div><img class="project-image" src="/images/nhlquizappimage.png"></div>
         <h3><a href="https://bmbachow.github.io/nhl-quiz-project/" target="_blank">NHL Quiz App</a></h3>
         <h3><a href="https://github.com/bmbachow/nhl-quiz-project" target="_blank">Repo</a></h3>
         <p>A short multiple-choice quiz about NHL trivia</p><p>Built using HTML, CSS, Javascript, and jQuery</p>
       </section>
       <section class="project2">
-        <div><img class="projectImage" src="/images/blue-image.jpg"></div>
+        <div><img class="project-image" src="/images/blue-image.jpg"></div>
         <h3>Blue App</h3>
         <p>A placeholder description for a project to be added in the future</p>
       </section>
-      
+      </div>
 
 
     </div>
 
   <footer>
-    <div id="contact" class="contact-info">
+    <div class="contact">
         <ul class="info">
             <li><a href="bmbachow@gmail.com" target="_blank">Email</a></li>
             <li><a href="https://github.com/bmbachow" target="_blank">Github</a></li>
@@ -57,3 +59,6 @@
 
 </body>
 </html>
+
+
+

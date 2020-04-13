@@ -1,59 +1,275 @@
-* {
-  box-sizing: border-box
-}
-
-body {
-  background: #d4e7ffc0;
-}
-
-#navbar-ul {
-  list-style: none;
-  display: inline-flex;
-  text-decoration: none;
-  float: right;
-}
-
-#navbar-ul > li {
-  margin-right: 30px;
-  padding: 12px;
-  color: #bbd4f5c0;
-  font-family: 'Open Sans', sans-serif;
-  border-radius: 30px;
-  border: 1px solid #DEECFF;
+/*mobile*/
+@media only screen and (min-width: 320px) {
+  * {
+    box-sizing: border-box;
+    width: 100vw;
+  }
   
+  body {
+    background-color: #d4e7ffc0;
+  }
+  
+  .navbar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    z-index: 50;
+    background-color: rgba(131, 3, 67);
+  }
+  
+  .navbar-ul {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 35px;
+    text-decoration: none;
+    float: right;
+    text-align: center;
+  }
+  
+  .navbar-ul > li {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-right: 32px;
+    color: #bbd4f5c0;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 30px;
+    border: 1px solid #DEECFF;
+  }
+  
+  .navbar-ul > li > a {
+    text-decoration: none;
+    color: #bbd4f5c0
+  }
+  
+  .hero {
+    margin-top: 90px;
+    width: 100vw;
+    margin-left: -8px;
+  }
+  
+  .blurb {
+    margin-top: -40px;
+    font-size: 25px;
+    margin-left: 100px;
+    font-family: 'Amaranth';
+    font-weight: bolder;
+    color: #830343;
+  }
+  
+  .about-me > img {
+    width: 30vw;
+    z-index: 30;
+    border-radius: 30px;
+    float: right;
+    margin-right: 30px;
+  }
+  
+  
+  .personal-statement {
+    margin-left: 1%;
+    margin-right: 10%;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #830343;
+    padding-top: 40px;
+  }
+  
+  .projects {
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Amaranth';
+    font-size: 22px;
+    font-weight: bold;
+    color: #830343;
+  }
+  
+  
+  .project-image {
+    width: 80vw;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 30px;
+  }
+  
+  .project-blocks {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #830343;
+  }
+  
+  .info li {
+    display: inline;
+    margin: 5px;
+  }
+  
+  .contact {
+    padding-top: 20px;
+    margin-left: 50px;
+  }
 }
 
-#navbar-ul > li > a {
-  text-decoration: none;
-  color: #bbd4f5c0
+
+/*iPad potrait*/
+@media only screen and (min-width: 768px) {
+  .navbar {
+    height: 200px;
+  }
+  
+  .navbar-ul {
+   padding-top: 40px;
+   width: 80vw;
+   margin-right: 15%
+  }
+  
+  .navbar-ul > li {
+    padding: 4%;
+    font-size: 20px;
+  }
+  
+  .hero {
+    margin-top: 90px;
+    width: 100vw;
+    height: 40vh;
+    margin-left: -8px;
+  }
+  
+  .blurb {
+    margin-top: -60px;
+    font-size: 35px;
+    margin-left: 370px;
+    font-family: 'Amaranth';
+    font-weight: bolder;
+    color: #830343;
+  }
+
+  .about-me > img {
+    margin-top: -50px;
+    margin-left: 50px;
+    width: 35vw;
+    z-index: 30;
+    border-radius: 30px;
+    float: right;
+    margin-right: 150px;
+  }
+  
+  
+  .personal-statement {
+    margin-left: 30px;
+    padding-right: 400px;
+    margin-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #830343;
+  }
+
+  .projects {
+    padding-top: 180px;
+    padding-right: 100px;
+    text-align: center;
+    font-family: 'Amaranth';
+    font-size: 30px;
+    font-weight: bold;
+    color: #830343;
+  }
+  
+  
+  .project-image {
+    width: 80vw;
+    margin-left: 3%;
+    margin-right: 28%;
+    border-radius: 60px;
+    padding-top: 20px;
+  }
+
+  .project-blocks p , h3 {
+    margin-left: -60px;
+  }
+  
+  .info li {
+    display: inline;
+    margin: 75px;
+    font-size: 20px;
+  }
+  
+  .contact {
+    padding-top: 20px;
+    margin-left: 50px;
+  }
+
 }
 
-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 50;
-  background-color: rgba(131, 3, 67);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*iPad lanscape / small laptop*/
+@media only screen and (min-width: 1024px) {
+  body {
+      color: blue;
+  }
 }
 
-#hero {
+/*large desktop*/
+@media only screen and (min-width: 1600px) {
+  body {
+      color: yellow;
+  }
+}
+
+
+
+
+
+
+ /*
+
+.hero {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 40px;
-}
+    }
 
-#about-me > img {
-  position: relative;
-  top: -100px;
-  left: 80px;
-  width: 150px;
-  z-index: 30;
-  border-radius: 30px;
-}
 
-#Bachow {
+
+
+
+
+
+
+
+
+.Bachow {
   margin-top: -220px;
   margin-left: 250px;
   position: static;
@@ -62,14 +278,14 @@ nav {
   color: rgba(131, 3, 67);
 }
 
-#personal-statement {
+.personal-statement {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 30px;
   font-family: 'Open Sans', sans-serif;
 }
-
-.project-blockx {
+*/
+/* .project-block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -77,7 +293,7 @@ nav {
 
 
 
-#contact {
+.contact {
   display: table;
   margin: 0 auto;
 }
@@ -92,7 +308,7 @@ nav {
   margin: 30px;
 }
 
-#project1 {
+.project1 {
   display: flex;
   border-style: solid;
   border-width: 3px;
@@ -102,10 +318,13 @@ nav {
   margin-right: 10px;
   margin-bottom: 10px;
   border-color: #830343;
-}
+} 
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
@@ -139,6 +358,16 @@ nav {
   left: 0;
   z-index: 50;
   background-color: rgba(131, 3, 67);
+}
+
+header {
+  background: rgba(0, 0, 0, 0) url("/images/hero.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
 }
 
 #hero {
@@ -187,9 +416,9 @@ nav {
   padding: 20px;
   font-family: 'Amaranth'; font-size: 32px;
   color: rgba(131, 3, 67);
-}
+} */
 
-#contact {
+/* #contact {
   display: table;
   margin: 0 auto;
 }
@@ -202,8 +431,8 @@ nav {
 .info li {
   display: inline;
   margin: 30px;
-}
-
+} */
+/* 
 .projectImage {
   margin-left: auto;
   margin-right: auto;
@@ -231,4 +460,8 @@ nav {
   margin-bottom: 40px;
   padding-top: 10px;
   border-radius: 10px;
-}
+} */
+ */
+
+
+
