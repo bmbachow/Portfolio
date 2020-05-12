@@ -9,6 +9,7 @@
     background-color: #d4e7ffc0;
   }
   
+  
   .navbar {
     width: 100vw;
     position: fixed;
@@ -53,7 +54,7 @@
   .blurb {
     margin-top: -40px;
     font-size: 25px;
-    margin-left: 100px;
+    margin-left: 200px;
     font-family: 'Amaranth';
     font-weight: bolder;
     color: #830343;
@@ -64,22 +65,25 @@
     z-index: 30;
     border-radius: 30px;
     float: right;
-    margin-right: 30px;
+    margin-right: 40px;
   }
   
   
   .personal-statement {
     margin-left: 1%;
-    margin-right: 10%;
+    margin-right: 20px;
+    padding-right: 20px;
     margin-top: 30px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: #830343;
     padding-top: 40px;
+    width: 60vw;
+    padding-left: 10px;
   }
   
   .projects {
-    padding-top: 60px;
+    padding-top: 80px;
     text-align: center;
     font-family: 'Amaranth';
     font-size: 22px;
@@ -87,19 +91,30 @@
     color: #830343;
   }
   
+  .project1 , .project2 {
+    
+    padding-top: 20px;
+    max-width: 95vw;
+    
+  }
+
+  .project2 {
+    margin-top: 20px;
+  }
   
   .project-image {
     width: 80vw;
     margin-left: 8%;
     margin-right: 8%;
     border-radius: 30px;
+    max-width: 820px;
   }
   
   .project-blocks {
-    text-align: center;
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
     color: #830343;
-  }
+     }
   
   .info li {
     display: inline;
@@ -107,7 +122,16 @@
   }
   
   .contact {
-    padding-top: 20px;
+    padding-top: 30px;
+    margin-left: 120px;
+  }
+
+    .project-blocks a  {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  .project-blocks p {
     margin-left: 50px;
   }
 }
@@ -131,7 +155,7 @@
   }
   
   .hero {
-    margin-top: 90px;
+    margin-top: 190px;
     width: 100vw;
     height: 40vh;
     margin-left: -8px;
@@ -139,15 +163,11 @@
   
   .blurb {
     margin-top: -60px;
-    font-size: 35px;
-    margin-left: 370px;
-    font-family: 'Amaranth';
-    font-weight: bolder;
-    color: #830343;
+    font-size: 42px;
+    margin-left: 310px;
   }
 
   .about-me > img {
-    margin-top: -50px;
     margin-left: 50px;
     width: 35vw;
     z-index: 30;
@@ -158,20 +178,16 @@
   
   
   .personal-statement {
-    margin-left: 30px;
-    padding-right: 400px;
-    margin-top: 100px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    color: #830343;
+   font-size: 22px;
+   padding-left: 20px;
   }
 
   .projects {
-    padding-top: 180px;
+    padding-top: 120px;
     padding-right: 100px;
     text-align: center;
     font-family: 'Amaranth';
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     color: #830343;
   }
@@ -189,6 +205,8 @@
     margin-left: -60px;
   }
   
+  
+
   .info li {
     display: inline;
     margin: 75px;
@@ -196,272 +214,103 @@
   }
   
   .contact {
-    padding-top: 20px;
-    margin-left: 50px;
+    padding-top: 70px;
+    margin-left: 120px;
+  }
+  .project-blocks a {
+    font-size: 30px;
+    margin-left: 100px;
   }
 
+  .project-blocks p {
+    margin-left: 40px;
+    font-size: 20px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*iPad lanscape / small laptop*/
 @media only screen and (min-width: 1024px) {
-  body {
-      color: blue;
+  .about-me > img {
+    width: 360px;
   }
+  .navbar {
+    height: 300px;
+  }
+  
+  .navbar-ul {
+   padding-top: 40px;
+   width: 80vw;
+   margin-right: 15%
+  }
+  
+  .navbar-ul > li {
+    padding: 4%;
+    font-size: 30px;
+  }
+
+  .hero {
+    margin-top: 290px;
+    width: 100vw;
+    margin-left: -8px;
+  }
+
+  .projects{
+    padding-top: 150px;
+    font-size: 46px;
+  }
+
+  .personal-statement {
+    font-size: 28px;
+  }
+
+  .blurb {
+    font-size: 60px;
+    margin-top: -80px;
+    margin-left: 410px;
+  }
+
+  .project-blocks a {
+    font-size: 40px;
+  }
+  .project-blocks p {
+    font-size: 24px;
+    
+  }
+  .contact {
+    padding-top: 120px;
+    margin-left: 260px;
+  }
+  
 }
 
 /*large desktop*/
 @media only screen and (min-width: 1600px) {
-  body {
-      color: yellow;
+  .project-blocks a {
+    font-size: 50px;
+    margin-left: 130px;
   }
+  .project-blocks p{
+margin-left: 70px;
 }
 
-
-
-
-
-
- /*
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-    }
-
-
-
-
-
-
-
-
-
-
-.Bachow {
-  margin-top: -220px;
-  margin-left: 250px;
-  position: static;
-  font-family: 'Amaranth'; font-size: 42px;
-  text-align: center;
-  color: rgba(131, 3, 67);
-}
-
-.personal-statement {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 30px;
-  font-family: 'Open Sans', sans-serif;
-}
-*/
-/* .project-block {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-
-.contact {
-  display: table;
-  margin: 0 auto;
-}
-
-.info {
-  list-style: none;
-  padding-top: 150px;
-}
-
-.info li {
-  display: inline;
-  margin: 30px;
-}
-
-.project1 {
-  display: flex;
-  border-style: solid;
-  border-width: 3px;
-  width: 500px;
-  height: 500px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-color: #830343;
-} 
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-body {
-  background: #d4e7ffc0;
-}
-
-#navbar-ul {
-  list-style: none;
-  display: inline-flex;
-  text-decoration: none;
-}
-
-#navbar-ul > li {
-  margin-right: 30px;
-  padding: 12px;
-  color: #bbd4f5c0;
-  font-family: 'Open Sans', sans-serif;
-  border-radius: 30px;
-  border: 1px solid #DEECFF;
-}
-
-#navbar-ul > li > a {
-  text-decoration: none;
-  color: #bbd4f5c0
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 50;
-  background-color: rgba(131, 3, 67);
-}
-
-header {
-  background: rgba(0, 0, 0, 0) url("/images/hero.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-}
-
-#hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
-}
-
-#about-me > img {
-  position: relative;
-  top: -100px;
-  left: 80px;
-  width: 150px;
-  z-index: 30;
-  border-radius: 30px;
-}
-
-#Bachow {
-  margin-top: -220px;
-  margin-left: 250px;
-  position: static;
-  font-family: 'Amaranth'; font-size: 42px;
-  text-align: center;
-  color: rgba(131, 3, 67);
-}
-
-#personal-statement {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 30px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.project-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.blurb {
+  font-size: 90px;
+  margin-top: -120px;
+  margin-left: 620px;
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  font-family: 'Amaranth'; font-size: 32px;
-  color: rgba(131, 3, 67);
-} */
-
-/* #contact {
-  display: table;
-  margin: 0 auto;
+  font-size: 66px;
 }
 
-.info {
-  list-style: none;
-  padding-top: 150px;
+.contact {
+  padding-top: 180px;
+  margin-left: 490px;
+}
 }
 
-.info li {
-  display: inline;
-  margin: 30px;
-} */
-/* 
-.projectImage {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  max-width: 90vw;
-  
-}
-
-.project1 {
-  border-style: solid;
-  border-color: #830343;
-  margin-bottom: 40px;
-  padding-top: 10px;
-  border-radius: 10px;
-}
-
-.projectBlocks {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.project2 {
-  border-style: solid;
-  border-color: #830343;
-  margin-bottom: 40px;
-  padding-top: 10px;
-  border-radius: 10px;
-} */
- */
 
 
 
+ 
